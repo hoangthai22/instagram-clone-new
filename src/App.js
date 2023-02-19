@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { Suspense, useContext } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import "./App.css";
+import { Loading } from "./components/Loading/loading";
+import { AppContext } from "./Context/AppProvider";
+import AuthLayout from "./layouts/AuthLayout";
+import { DefaultLayout } from "./layouts/DefaultLayout";
+import NotFoundPage from "./layouts/NotFoundPage";
+import { privateRoutes, publicRoutes } from "./routes";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Suspense fallback={<div>Loading ...</div>}>
+            <Loading />
+
+            <Routes>
+                {publicRoutes.map((route, index) => {
+                    const Page = route.component;
+                    return <Route key={index} path={route.path} element={<DefaultLayout component={Page} />} />;
+                })}
+                {privateRoutes.map((route, index) => {
+                    const Page = route.component;
+                    return <Route key={index} path={route.path} element={<AuthLayout component={Page} />} />;
+                })}
+                <Route path="*" element={<NotFoundPage />} />
+            </Routes>
+        </Suspense>
+    );
 }
 
 export default App;

@@ -1,0 +1,23 @@
+.follow__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    max-height: 500px;
+    margin-top: 16px;
+    padding: 0 24px;
+}
+.follow__item {
+    display: flex;
+    align-items: center;
+}
+.follow__modal .ant-modal-header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.follow__modal .ant-modal-content {
+    padding: 20px 0;
+}

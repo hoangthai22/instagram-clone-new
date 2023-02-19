@@ -1,0 +1,36 @@
+.messsage__wrap {
+    display: flex;
+    padding: 4px 20px;
+    align-items: flex-end;
+    min-height: 44px;
+}
+.messsage__content {
+    display: flex;
+    flex: 1;
+    padding: 0 10px;
+
+    &-input {
+        // width: 50%;
+        max-width: 50%;
+        margin-bottom: 0;
+        .fit-content {
+            padding: 13px 16px;
+            border: 1px solid rgb(230, 230, 230);
+            border-radius: 22px;
+            white-space: normal;
+            font-size: 14px;
+            line-height: 18px;
+            width: fit-content;
+        }
+    }
+}
+.own {
+    .messsage__content-input {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .fit-content {
+        background-color: rgb(240, 240, 240);
+    }
+    flex-direction: row-reverse;
+}

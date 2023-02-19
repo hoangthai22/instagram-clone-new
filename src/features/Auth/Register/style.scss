@@ -1,0 +1,80 @@
+.register__form-top {
+    border: 1px solid #dbdbdb;
+    margin-top: 64px;
+    background-color: #fafafa;
+    // height: 620px;
+
+    .register__form__title {
+        text-align: center;
+        margin: 24px auto 48px;
+    }
+
+    .login__input-text {
+        width: calc(100% - 64px);
+        height: 50px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        background-color: rgb(240, 240, 240);
+    }
+    .login__btn-register {
+        width: calc(100% - 64px);
+        margin: 8px 32px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #0095f6;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        span {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .login__Pseudo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        .login__Pseudo-left,
+        .login__Pseudo-right {
+            background-color: rgb(210, 210, 210);
+            height: 2px;
+            width: 35%;
+            margin-right: 32px;
+            margin-left: 32px;
+        }
+        .login__Pseudo-center span {
+            color: rgb(150, 150, 150);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .register__wrap {
+        position: relative !important;
+
+        &__bottom {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
+    }
+    .register__form__title {
+        // margin-top: 70px !important;
+    }
+    // .register__content span,
+    // .register__content a {
+    //   font-size: 1rem;
+    // }
+    // .login__form-bottom {
+    //   border: none !important;
+    // }
+    .register__form-top {
+        height: 100vh;
+        margin: 0 !important;
+    }
+}

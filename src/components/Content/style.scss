@@ -1,0 +1,91 @@
+.content {
+    overflow-y: auto;
+    height: calc(100vh - 64px);
+    margin-top: 64px;
+    &__container-left {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        flex-direction: column;
+        max-width: 650px;
+    }
+    &__container-right {
+        margin-top: 30px;
+        height: 100%;
+        display: flex;
+        width: calc(100% - 650px);
+        // display: none;
+        .content__container-right-wrap {
+            padding-left: 20px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        &__img-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        &__img-avatar-recomnend {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        &__wrapName {
+            display: flex;
+            margin-left: 24px;
+            flex-direction: column;
+            align-self: center;
+            flex: 1;
+        }
+    }
+
+    .card__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.layout__messenger {
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    //Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 2000px;
+    .content {
+        &__container-left {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        &__container-right {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    // Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 375px;
+    // span={8}
+    // offset={6}
+
+    .ant-col-offset-6 {
+        margin-left: 0%;
+    }
+    .ant-col-8 {
+        display: block;
+        flex: none;
+        max-width: 100%;
+    }
+    .card__modal {
+        &__img__wrap {
+            display: none;
+        }
+        &__info {
+            width: 100% !important;
+        }
+    }
+}

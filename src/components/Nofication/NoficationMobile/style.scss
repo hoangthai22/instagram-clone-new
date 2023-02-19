@@ -1,0 +1,17 @@
+.content__nofication__mobile {
+  height: calc(100vh - 64px);
+  width: 100%;
+  margin-top: 64px;
+  &__wrap {
+    background-color: #fff;
+    border: 1px solid rgb(210, 210, 210);
+    border-left: none;
+    height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  &__container {
+    gap: 8px;
+  }
+}

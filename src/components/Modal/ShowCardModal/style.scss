@@ -1,0 +1,87 @@
+.card__modal {
+    &__wrap {
+        display: flex;
+        height: 100%;
+        position: relative;
+        &__after {
+            font-size: 2rem;
+            position: absolute;
+            top: calc(50% - 1rem);
+            left: -50px;
+            color: rgb(235, 235, 235);
+            cursor: pointer;
+        }
+        &__before {
+            font-size: 2rem;
+            position: absolute;
+            top: calc(50% - 1rem);
+            right: -50px;
+            color: rgb(235, 235, 235);
+            cursor: pointer;
+        }
+    }
+
+    &__img__wrap {
+        width: 636px;
+        // max-height: 796px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+
+        flex: 1;
+        border-left: 1px solid rgb(235, 235, 235);
+        &__header {
+            height: 60px;
+            padding: 4px 16px;
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(235, 235, 235);
+
+            &__right {
+                margin-left: 10px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        &__content {
+            // width: 100%;
+            height: 380px;
+            flex: 1 1 auto;
+            overflow-y: scroll;
+        }
+        &__footer {
+            // width: 100%;
+            border-top: 1px solid rgb(235, 235, 235);
+            height: 155px;
+        }
+    }
+}
+.setting-post:hover {
+    color: rgb(150, 150, 150);
+}
+.my-modal .ant-modal-content {
+    padding: 0;
+}
+.my-modal-comment .ant-modal-content {
+    padding: 0;
+}
+.my-modal-comment .ant-modal-content,
+.my-modal-comment .ant-modal-body {
+    height: 100%;
+}
+.menu-item-hover:hover {
+    background-color: rgb(245, 245, 245) !important;
+}

@@ -1,0 +1,64 @@
+.modal__setting {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    text-align: center;
+    cursor: pointer;
+    &:last-child {
+        border-bottom: none;
+    }
+    &:hover {
+        background-color: rgb(230, 230, 230);
+    }
+    &__title {
+        padding: 20px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        gap: 5px;
+        border-bottom: 1px solid rgb(230, 230, 230);
+        & span:first-child {
+            font-size: 20px;
+        }
+        & span:last-child {
+            font-size: 15px;
+            color: rgb(160, 160, 160);
+        }
+    }
+}
+.modal__setting:first-child:hover {
+    background-color: rgb(230, 230, 230);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.modal__setting:last-child:hover {
+    border-bottom-left-radius: 10px;
+    background-color: rgb(230, 230, 230);
+    border-bottom-right-radius: 10px;
+}
+.modal__setting > span {
+    font-size: 1rem;
+}
+body > div:nth-child(9) > div > div.ant-modal-wrap > div > div.ant-modal-content > button {
+    display: none;
+}
+
+body > div:nth-child(9) > div > div.ant-modal-wrap > div > div.ant-modal-content {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+.ant-modal-content {
+    border-radius: 10px;
+    // overflow: hidden;
+}
+
+.my-modal .ant-modal-content {
+    padding: 0;
+    border-radius: 10px;
+}
