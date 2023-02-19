@@ -11,11 +11,11 @@
 A social networking website similar to Instagram.
 
 ## Features
-CRUD posts
-Follow users 
-Like posts 
-Comment on posts 
-Send messages to other users.
+- CRUD posts
+- Follow users 
+- Like posts 
+- Comment on posts 
+- Send messages to other users.
 
 ## Demo
 
