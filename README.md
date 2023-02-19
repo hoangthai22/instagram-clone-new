@@ -22,7 +22,7 @@ Send messages to other users.
 Explore our demo.
 
 <p align="center">
-<img alt="instagram" width="950" src="/demo.png"/>
+<img alt="instagram" width="950" src="/public/demo.png"/>
 </p>
 
 
