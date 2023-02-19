@@ -68,10 +68,10 @@ const Profile = () => {
                             };
                             if (myProfile) {
                                 setProfileInfo(res);
+                                setIsIconSetting(true);
                             } else {
                                 setProfileFriendInfo(res);
                             }
-                            console.log({ res });
                             if (snapshot.docs[0].data().listFollower?.some((item) => item.uid === user?.uid)) {
                                 setIsFollow(true);
                             } else {
@@ -95,6 +95,7 @@ const Profile = () => {
             console.log("chay", profileInfo);
             setListPost(profileInfo.posts);
             setUserInfomation(profileInfo.info);
+            setIsIconSetting(true);
             if (profileInfo.info.listFollower?.some((item) => item.uid === user?.uid)) {
                 setIsFollow(true);
             } else {
