@@ -3,7 +3,7 @@
   <h1 align="center">INSTAGRAM CLONE</h1>
 </p>
 <h4 align="center">
-    <a href="https://demo.evershop.io/">Demo</a>
+    <a href="https://instagram-ht.netlify.app/">Demo</a>
 </h4>
 
 ## Introduction
